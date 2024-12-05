@@ -8,6 +8,8 @@ public class App {
     public static void main(String[] args) {
         //CREAR VISTA
         View vista = new View();
+        //vista.showMenu();
+
 
         //Craer las clases con los metodosde ordenamiento y busca
         SortingMethods sortingMethods = new SortingMethods();
@@ -17,5 +19,7 @@ public class App {
         Controller controller = new Controller(vista, sortingMethods, searchMethods);
 
         //Iniciar la aplicacion
+        controller.start();
+
     }
 }

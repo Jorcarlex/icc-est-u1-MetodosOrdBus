@@ -22,4 +22,7 @@ public class Person {
         this.age = age;
     }
 
+    public String toString() {
+        return "Person{name='" + name + "', age=" + age + "}";
+    }
 }
